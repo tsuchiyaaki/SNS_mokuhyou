@@ -1,77 +1,12 @@
+
 //
-//  ContentView.swift
+//  aa.swift
 //  SNS_mokuhyou
 //
-//  Created by 土屋　暁 on 2026/05/23.
+//  Created by 土屋　暁 on 2026/06/20.
 //
+
 import SwiftUI
-
-struct ContentView: View {
-    var body: some View {
-        ZStack {
-            Color(red: 0.88, green: 0.92, blue: 0.98)
-                .ignoresSafeArea()
-
-            VStack(spacing: 20) {
-
-               
-                HStack {
-                    Spacer()
-
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.system(size: 50))
-                        .foregroundColor(.red)
-                        .padding(.trailing, 20)
-                }
-
-                ScrollView(showsIndicators: false) {
-
-                    VStack(spacing: 25) {
-
-                        FeedCard(
-                            name: "T.A",
-                            iconColor: .red
-                        )
-
-                        FeedCard(
-                            name: "ひらけー",
-                            iconColor: .black
-                        )
-                    }
-                    .padding(.horizontal)
-                }
-
-                Spacer()
-
-               
-              
-            }
-
-         
-            VStack {
-                Spacer()
-
-                HStack {
-                    Spacer()
-
-                    Button {
-
-                    } label: {
-                        Image(systemName: "plus")
-                            .font(.system(size: 30))
-                            .foregroundColor(.black)
-                            .frame(width: 70, height: 70)
-                            .background(Color.white.opacity(0.9))
-                            .clipShape(Circle())
-                            .shadow(radius: 5)
-                    }
-                    .padding(.trailing, 35)
-                    .padding(.bottom, 95)
-                }
-            }
-        }
-    }
-}
 
 struct FeedCard: View {
 
@@ -152,10 +87,6 @@ struct FeedCard: View {
     }
 }
 
-
-
-
-
 #Preview {
-    ContentView()
+    FeedCard(name: "T.A", iconColor: .red)
 }
