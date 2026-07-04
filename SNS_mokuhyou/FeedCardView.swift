@@ -17,7 +17,7 @@ struct FeedCard: View {
                     .foregroundColor(iconColor)
 
                 
-                Text(.name)        // 固定の name → post.name
+                Text(post.name)        // 固定の name → post.name
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
